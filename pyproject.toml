@@ -1,0 +1,17 @@
+[project]
+name = "bokete-dl"
+version = "0.1.0"
+description = "Local Japanese ogiri prompt generation and review"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = ["datasets", "pillow", "requests"]
+
+[dependency-groups]
+dev = ["pytest"]
+
+[project.scripts]
+bokete-dl = "bokete_dl:main"
+
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13.0"]
+build-backend = "uv_build"
